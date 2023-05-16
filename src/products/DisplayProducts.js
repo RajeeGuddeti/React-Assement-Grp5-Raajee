@@ -12,9 +12,13 @@ const DisplayProducts = (props) => {
         <div class="imagalign">
           <img src={require("./cart.png")} alt="cart" />
         </div>
-        {props.data.map((p) => (
-          <ProductItem key={p.id} product={p} />
-        ))}
+        <div className="grid-container">
+          {props.data.map((p) => (
+            <div className="grid-item">
+              <ProductItem key={p.id} product={p} />
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* <Outlet /> */}
