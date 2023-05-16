@@ -1,6 +1,21 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  /* background-color: blue; */
+  background-size: 100%;
+}
+.grid-container {
+  /* background-color:cadetblue */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  background-color: cadetblue;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 .inlineDisply {
   display: table-cell;
